@@ -1,0 +1,16 @@
+NAME                                           READY   STATUS      RESTARTS      AGE
+ow-alarmprovider-7bf44794cc-947cb              1/1     Running     0             54m 
+ow-apigateway-75f657f6dc-6tgqq                 1/1     Running     0             54m
+ow-controller-0                                1/1     Running     6 (48m ago)   54m // central controller + load balancer
+ow-couchdb-6f77dcc974-72fz5                    1/1     Running     0             54m // main database
+ow-ingress-nginx-controller-77d96f4fb5-h96ls   1/1     Running     0             55m
+ow-init-couchdb-dz2br                          0/1     Completed   0             54m
+ow-install-packages-vgwsw                      0/1     Completed   0             54m //
+ow-invoker-0                                   1/1     Running     0             54m // function invoker
+ow-kafka-0                                     1/1     Running     0             54m // messaging system
+ow-kafkaprovider-6b5f89fc4d-fv9s8              1/1     Running     0             54m
+ow-nginx-9566569b9-7m58n                       1/1     Running     0             54m // api access point - nginx
+ow-redis-6cc4bdddf4-6bj8h                      1/1     Running     0             54m
+ow-wskadmin                                    1/1     Running     0             54m
+ow-zookeeper-0                                 1/1     Running     0             54m
+wskow-invoker-00-7-prewarm-nodejs14            1/1     Running     0             6m13s

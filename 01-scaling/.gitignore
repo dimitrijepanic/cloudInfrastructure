@@ -1,0 +1,4 @@
+*.pdf
+client/*.png
+client/*.jpg
+report/img/generated/*

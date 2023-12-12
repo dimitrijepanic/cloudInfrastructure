@@ -1,0 +1,52 @@
+./wsk activation get <activation_id> -i
+ok: got activation 1f37895b19d847efb7895b19d8b7efb0
+{
+    "namespace": "guest",
+    "name": "greeting",
+    "version": "0.0.1",
+    "subject": "guest",
+    "activationId": "1f37895b19d847efb7895b19d8b7efb0",
+    "start": 1670860233667,
+    "end": 1670860233673,
+    "duration": 6,
+    "statusCode": 0,
+    "response": {
+        "status": "success",
+        "statusCode": 0,
+        "success": true,
+        "result": {
+            "payload": "Hello, stranger from somewhere!"
+        }
+    },
+    "logs": [
+        "2022-12-12T15:50:33.670773697Z stdout: params: {}"
+    ],
+    "annotations": [
+        {
+            "key": "path",
+            "value": "whisk.system/samples/greeting"
+        },
+        {
+            "key": "waitTime",
+            "value": 24
+        },
+        {
+            "key": "kind",
+            "value": "nodejs:14"
+        },
+        {
+            "key": "timeout",
+            "value": false
+        },
+        {
+            "key": "limits",
+            "value": {
+                "concurrency": 1,
+                "logs": 10,
+                "memory": 256,
+                "timeout": 60000
+            }
+        }
+    ],
+    "publish": false
+}

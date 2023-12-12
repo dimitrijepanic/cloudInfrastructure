@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: pdfmagic
+  labels:
+    app: pdfmagic
+spec:
+  # Number of pods used for scaling
+  replicas: 3
+  selector:
+    matchLabels:
+      app: pdfmagic
+  template:
+    metadata:
+      labels:
+        app: pdfmagic
+    spec:
+      containers:
+      - name: pdfmagic
+        image: jacikot/pdfmagic:latest
+        resources:
+          requests:
+            cpu: 0.1
+        ports:
+          - containerPort: 8080
